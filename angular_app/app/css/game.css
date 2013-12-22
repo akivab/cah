@@ -1,0 +1,11 @@
+.card, .drop {
+	width: 100px;
+	height: 100px;
+	border: 1px solid black;
+	float: left;
+}
+
+.drop {
+	background: black;
+	border: 2px solid gray;
+}

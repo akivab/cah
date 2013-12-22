@@ -1,0 +1,11 @@
+<a ng-if="login_url" ng-href="{{ login_url }}">Login</a>
+<a ng-if="logout_url" ng-href="{{ logout_url }}">Login</a>
+Lobby<br>
+
+<div ng-repeat="room in games">
+	<a ng-href="#/game/{{ room.id }}">{{ room.name }}</a>
+	<span> {{ room.seats }} </span>
+</div>
+
+<input type="text" ng-model="room_name"/>
+<button ng-click='add_room()'>Add</button>

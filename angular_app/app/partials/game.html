@@ -1,0 +1,6 @@
+<a ng-if="login_url" ng-href="{{ login_url }}">Login</a>
+<a ng-if="logout_url" ng-href="{{ logout_url }}">Login</a>
+{{ game.name }} <br>
+
+<button ng-if="!is_in_room()" ng-click='join_room()'>Join</button>
+<button ng-if="is_in_room()" ng-click='leave_room()'>Leave</button>

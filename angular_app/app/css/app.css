@@ -1,0 +1,19 @@
+.login-button {
+  padding: 10px;
+  display: inline-block;
+  cursor: pointer;
+  font-family: 'Open Sans', sans-serif;
+  color: white;
+  text-align: center;
+  border-radius: 5px;
+}
+.facebook.login-button {
+  background-color: #3B5998;
+}
+.twitter.login-button {
+  background-color: #4099FF;
+}
+
+[ng\:cloak], [ng-cloak], .ng-cloak, .x-ng-cloak {
+  display: none;
+}

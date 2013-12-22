@@ -1,0 +1,4 @@
+{{ auth.user.displayName  }}
+<img ng-show="auth.user" ng-src="{{ AuthUtil.pictureUrl(auth) }}" />
+
+<button ng-click="auth.$logout()">Logout</button>

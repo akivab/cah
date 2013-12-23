@@ -1,11 +1,72 @@
-.card, .drop {
-	width: 100px;
-	height: 100px;
-	border: 1px solid black;
-	float: left;
-}
+.card {
+  overflow: hidden;
+  width: 150px;
+  height: 255px;
+  position: relative;
+  border: 1px solid #111;
+  border-radius: 11.25px; }
 
-.drop {
-	background: black;
-	border: 2px solid gray;
-}
+.logo {
+  border: 1px solid white;
+  position: absolute;
+  bottom: 11.25px;
+  width: 7.5px;
+  height: 7.5px;
+  -webkit-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  transform: rotate(0deg);
+  background: #555;
+  left: 7.5px; }
+
+.logo + .logo {
+  -webkit-transform: rotate(10deg);
+  -ms-transform: rotate(10deg);
+  transform: rotate(10deg);
+  background: #777;
+  left: 11.25px; }
+
+.logo + .logo + .logo {
+  -webkit-transform: rotate(20deg);
+  -ms-transform: rotate(20deg);
+  transform: rotate(20deg);
+  background: #aaa;
+  left: 15px; }
+
+.card.white {
+  background: white;
+  color: black; }
+
+.card.black {
+  background: black;
+  color: white; }
+
+.card .words {
+  font-family: 'Roboto';
+  left: 30px;
+  width: 150px;
+  font-size: 9.375px;
+  bottom: 7.5px;
+  position: absolute; }
+
+.card .content {
+  font-family: 'Roboto';
+  padding: 11.25px;
+  font-size: 15px;
+  font-weight: 700; }
+
+.main {
+  max-height: 500px; }
+
+.main .card {
+  vertical-align: middle;
+  float: left; }
+
+.players {
+  float: left;
+  position: relative;
+  padding: 10px;
+  min-width: 300px;
+  min-height: 255px; }
+
+.cards.playing {
+  float: left; }
